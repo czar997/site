@@ -1,0 +1,92 @@
+.application {
+  padding-top: 70px;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 211, 186, 0.4);
+    clip-path: polygon(39% 0px, 100% 0px, 100% 73%, 48.37% 73%);
+    z-index: -1;
+    @media (max-width: 767px) {
+      clip-path: polygon(23.48% 0px, 100% 0px, 100% 90%, 80.84% 90%);
+    }
+  }
+  @media (max-width: 1300px) {
+    padding-top: 50px;
+  }
+  @media (max-width: 1024px) {
+    padding-top: 30px;
+  }
+  @media (max-width: 575px) {
+    padding-top: 20px;
+  }
+}
+.application__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  @media (max-width: 1300px) {
+    gap: 35px;
+  }
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+}
+.application__text {
+  max-width: 575px;
+  text-align: right;
+  justify-self: right;
+  @media (max-width: 575px) {
+    text-align: center;
+  }
+  h2 {
+    color: $accent;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 45px;
+    text-align: left;
+    @media (max-width: 1300px) {
+      font-size: 35px;
+    }
+    @media (max-width: 1024px) {
+      margin-bottom: 20px;
+      font-size: 32px;
+    }
+    @media (max-width: 575px) {
+      font-size: 25px;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+  }
+  p {
+    max-width: 480px;
+    font-size: 20px;
+    margin: 0 0 45px auto;
+    text-align: right;
+    @media (max-width: 1024px) {
+      margin-bottom: 20px;
+    }
+    @media (max-width: 575px) {
+      text-align: center;
+      font-size: 17px;
+      margin-bottom: 15px;
+    }
+  }
+  @media (max-width: 1300px) {
+    max-width: unset;
+  }
+}
+.rustore__link {
+  display: inline-flex;
+  @media (max-width: 575px) {
+    justify-content: center;
+  }
+}
+.application__image {
+  padding-top: 40px;
+  @media (max-width: 767px) {
+    justify-self: center;
+    padding-top: 0;
+  }
+}

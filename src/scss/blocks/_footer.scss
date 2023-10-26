@@ -1,0 +1,141 @@
+.footer {
+  background: #151f2d;
+  box-shadow: 0px -15px 25px 0px rgba(28, 21, 21, 0.2);
+}
+
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: 0.9fr 590px 1fr;
+  gap: 55px;
+  color: #fff;
+  padding-bottom: 55px;
+  @media (max-width: 1300px) {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+  @media (max-width: 1023px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @media (max-width: 768px) {
+    gap: 10px;
+  }
+  @media (max-width: 700px) {
+    text-align: center;
+  }
+}
+.footer__link {
+  color: #f64;
+  font-size: 30px;
+  font-weight: 400;
+  white-space: nowrap;
+  @media (max-width: 1024px) {
+    font-size: 25px;
+  }
+  @media (max-width: 575px) {
+    font-size: 20px;
+  }
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  @media (max-width: 768px) {
+    gap: 10px;
+  }
+  @media (max-width: 700px) {
+    display: none;
+  }
+  h5 {
+    color: #f64;
+    font-size: 30px;
+    font-weight: 400;
+    @media (max-width: 1024px) {
+      font-size: 25px;
+    }
+  }
+  p {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.31;
+    @media (max-width: 1024px) {
+      font-size: 20px;
+    }
+  }
+}
+.tech-support {
+  @media (max-width: 700px) {
+    display: none;
+  }
+}
+.tech-support__contacts {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+
+  h5 {
+    color: #f64;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    white-space: nowrap;
+    @media (max-width: 1024px) {
+      font-size: 25px;
+    }
+    @media (max-width: 768px) {
+      margin-bottom: 10px;
+    }
+  }
+  p {
+    font-size: 25px;
+    font-weight: 400;
+    @media (max-width: 1024px) {
+      font-size: 20px;
+    }
+  }
+  .rustore__link {
+    width: max-content;
+    display: inline-block;
+  }
+}
+.footer__copyright {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: 40px;
+  border-top: 1px solid #535b66;
+  @media (max-width: 1024px) {
+    font-size: 17px;
+  }
+  @media (max-width: 700px) {
+    text-align: center;
+  }
+  @media (max-width: 575px) {
+    font-size: 10px;
+  }
+}
+
+.tech-support-mobile {
+  text-align: center;
+  display: none;
+  @media (max-width: 700px) {
+    display: block;
+  }
+  a {
+    font-size: 18px;
+    font-weight: 400;
+    @media (max-width: 575px) {
+      font-size: 14px;
+    }
+  }
+  a + a {
+    margin-left: 15px;
+  }
+}

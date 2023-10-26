@@ -1,0 +1,80 @@
+.contacts {
+  padding-top: 185px;
+  @media (max-width: 1200px) {
+    padding-top: 150px;
+  }
+  @media (max-width: 1024px) {
+    padding-top: 120px;
+  }
+  @media (max-width: 575px) {
+    padding-top: 80px;
+  }
+}
+.contacts__wrapper {
+  h3 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    @media (max-width: 575px) {
+      margin-bottom: 30px;
+    }
+  }
+}
+.contacts__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 20px;
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+.contact__card {
+  padding: 37px 40px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 25px 0px rgba(249, 53, 53, 0.2);
+  height: 420px;
+  @media (max-width: 575px) {
+    padding: 30px;
+  }
+}
+.contact__card-image {
+  margin-bottom: 35px;
+}
+.phone-info {
+  h6 {
+    color: $accent;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 35px;
+  }
+  a {
+    font-size: 25px;
+    font-weight: 400;
+    @media (max-width: 768px) {
+      font-size: 22px;
+    }
+  }
+}
+
+.contact__card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact__card-desc {
+  h6 {
+    color: $accent;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  a {
+    font-size: 18px;
+    text-decoration-line: underline;
+  }
+  p {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,16 @@
+.services {
+  padding-top: 200px;
+  @media (max-width: 1200px) {
+    padding-top: 150px;
+  }
+  @media (max-width: 1024px) {
+    padding-top: 120px;
+  }
+  @media (max-width: 575px) {
+    padding-top: 80px;
+  }
+}
+[data-animate-svg] {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}

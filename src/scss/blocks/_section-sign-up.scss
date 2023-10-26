@@ -1,0 +1,73 @@
+.sign-up {
+  padding-top: 80px;
+  @media (max-width: 1300px) {
+    padding-top: 50px;
+  }
+  @media (max-width: 575px) {
+    padding-top: 0;
+  }
+}
+.sign-up__wrapper {
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0px 10px 25px 0px rgba(249, 53, 53, 0.2);
+  padding: 60px 0;
+  h2 {
+    color: $accent;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 70px;
+  }
+  p {
+    font-size: 30px;
+    font-weight: 400;
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-bottom: 55px;
+  }
+  .btn__fill {
+    &:hover {
+      color: $text-color;
+    }
+  }
+  @media (max-width: 1300px) {
+    h2 {
+      font-size: 45px;
+      margin-bottom: 50px;
+    }
+    p {
+      font-size: 30px;
+      max-width: 1100px;
+      margin-bottom: 55px;
+    }
+  }
+  @media (max-width: 1024px) {
+    padding: 30px 0;
+    h2 {
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 25px;
+      max-width: 700px;
+      margin-bottom: 30px;
+    }
+  }
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 35px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 20px;
+      max-width: 500px;
+      margin-bottom: 20px;
+    }
+  }
+  @media (max-width: 575px) {
+    padding: 30px 20px;
+    .btn {
+      width: 100%;
+    }
+  }
+}

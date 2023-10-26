@@ -1,0 +1,226 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 238, 228, 0.7);
+  z-index: 999;
+  padding: 10px 20px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+  overflow-y: scroll;
+
+  @media (max-width: 575px) {
+    padding: 10px 15px;
+  }
+}
+.modal__window {
+  max-width: 730px;
+  margin: 150px auto 0;
+  padding: 65px 75px;
+  border-radius: 50px 0px;
+  border: 2px solid #f64;
+  background: #fff;
+  box-shadow: 0px 10px 25px 0px rgba(249, 53, 53, 0.2);
+  position: relative;
+  cursor: default;
+
+  @media (max-width: 1440px) {
+    margin: 120px auto 0;
+  }
+  @media (max-width: 1200px) {
+    margin: 100px auto 0;
+    padding: 55px 65px;
+    max-width: 650px;
+  }
+  @media (max-width: 1024px) {
+    margin: 80px auto 0;
+    padding: 47px 57px;
+    max-width: 550px;
+  }
+  @media (max-width: 768px) {
+    padding: 40px 45px;
+    max-width: 500px;
+  }
+  @media (max-width: 575px) {
+    margin: 60px auto 0;
+    padding: 30px 40px;
+    max-width: 400px;
+  }
+  @media (max-width: 425px) {
+    padding: 30px 15px;
+  }
+}
+.modal__tryfree-header {
+  text-align: center;
+  margin-bottom: 60px;
+  @media (max-width: 768px) {
+    margin-bottom: 40px;
+  }
+  @media (max-width: 575px) {
+    margin-bottom: 30px;
+  }
+  h5 {
+    color: $accent;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1;
+    white-space: nowrap;
+    @media (max-width: 1024px) {
+      font-size: 35px;
+    }
+    @media (max-width: 575px) {
+      font-size: 27px;
+    }
+    @media (max-width: 425px) {
+      font-size: 21px;
+    }
+  }
+  p {
+    font-size: 18px;
+    @media (max-width: 575px) {
+      font-size: 15px;
+    }
+    @media (max-width: 425px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.form__tryfree {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-size: 25px;
+  @media (max-width: 768px) {
+    font-size: 20px;
+    gap: 35px;
+  }
+  @media (max-width: 575px) {
+    gap: 30px;
+    font-size: 18px;
+  }
+  @media (max-width: 425px) {
+    gap: 27px;
+    font-size: 15px;
+  }
+  .tryfree__input {
+    border-bottom: 1px solid #aea9a6;
+    padding: 0 0 5px 20px;
+    @media (max-width: 575px) {
+      padding: 0 0 5px 10px;
+    }
+    &::placeholder {
+      color: #000;
+    }
+  }
+  textarea {
+    border: 1px solid #aea9a6;
+    padding: 10px 20px;
+    @media (max-width: 575px) {
+      padding: 10px;
+    }
+    &::placeholder {
+      color: #000;
+    }
+  }
+  .try-free__politics {
+    display: flex;
+    gap: 10px;
+  }
+  .fake-checkbox {
+    display: inline-block;
+    width: 29px;
+    height: 25px;
+    border: 1px solid #aea9a6;
+    @media (max-width: 575px) {
+      width: 24px;
+      height: 21px;
+    }
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      background-image: url(/img/checkbox_con.svg);
+      background-repeat: no-repeat;
+      background-position: center calc(50% - 5px);
+      transform: scale(0);
+      transition: transform 0.1s ease;
+      @media (max-width: 768px) {
+        background-position: center;
+      }
+    }
+  }
+  .real-checkbox:checked + .fake-checkbox::after {
+    transform: scale(1);
+  }
+  .btn {
+    max-width: 370px;
+    width: 100%;
+    margin-left: auto;
+  }
+}
+.real-checkbox {
+  width: 0;
+  height: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.try-free__politics-text {
+  font-size: 17px;
+  font-weight: 300;
+  @media (max-width: 575px) {
+    font-size: 14px;
+  }
+  a {
+    text-decoration: underline;
+    color: $accent;
+  }
+}
+.modal__close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 1;
+  color: #000;
+  @media (max-width: 1024px) {
+    width: 23px;
+    top: 25px;
+    right: 25px;
+  }
+  @media (max-width: 768px) {
+    width: 20px;
+    top: 17px;
+    right: 17px;
+  }
+  @media (max-width: 575px) {
+    width: 18px;
+    top: 13px;
+    right: 13px;
+  }
+  @media (max-width: 425px) {
+    width: 14px;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+// Модалка Аренда
+// .modal__rent {
+//   opacity: 1;
+//   visibility: visible;
+
+//   .modal__window {
+//     max-width: 80%;
+//   }
+// }
+// .modal__rent-header {
+//   .rentbuy__item-image {
+//     justify-content: start;
+//   }
+// }

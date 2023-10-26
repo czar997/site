@@ -1,0 +1,44 @@
+{
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "css-loader": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-babel": "latest",
+    "gulp-changed": "latest",
+    "gulp-clean": "latest",
+    "gulp-csso": "latest",
+    "gulp-file-include": "latest",
+    "gulp-group-css-media-queries": "latest",
+    "gulp-htmlclean": "latest",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-notify": "latest",
+    "gulp-plumber": "latest",
+    "gulp-sass": "latest",
+    "gulp-sass-glob": "latest",
+    "gulp-server-livereload": "latest",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-webp": "latest",
+    "gulp-webp-css": "latest",
+    "gulp-webp-html": "latest",
+    "i": "latest",
+    "npm": "latest",
+    "sass": "latest",
+    "style-loader": "latest",
+    "webpack-stream": "latest"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "browserslist": [
+    "last 5 versions"
+  ],
+  "dependencies": {
+    "scrollreveal": "^4.0.9",
+    "swiper": "^10.1.0",
+    "vivus": "^0.4.6"
+  }
+}
